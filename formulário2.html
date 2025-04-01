@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção de sistema</title>
+    <link rel="icon" href="6500779.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+            
+        }
+        body{
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 450px;
+            margin: 0 auto;
+        }
+        
+    </style>
+    <style>
+        textarea {
+            resize: none;
+            overflow: scroll;
+        }
+    
+    </style>
+   
+</head>
+
+<body>
+    <h1><b>Manutenção de usuarios do sistema interno</b></h1><br>
+
+    <form action="">
+        <label style="padding-right: 85px;" for="log">Login:</label>
+        <input type="text" id="log" placeholder="Insira seu login" required><br><br>
+
+        <label style="padding-right: 80px; ;" for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="Insira sua senha" required><br><br>
+
+        <label style="padding-right: 80px;" for="Status">Status:</label>
+        <select name="Status" id="Status">
+            <option>Inativo</option>
+            <option>Ativa</option>
+        </select><br><br>
+
+        <label style="padding-right: 80px;" for="Tipo">Tipo:</label>
+        <b><input type="radio" name="Tipo" id="Tipos">
+            <label for="Tipo">Técnico</label></b>
+
+        <b><input type="radio" name="Tipo" id="Tipos">
+            <label for="Prof">Professor</label></b>
+
+        <b><input type="radio" name="Tipo" id="Tipos">
+            <label for="Tipo">Técnico</label><br><br></b>
+
+        <label style="padding-right: 10px;" for="datanasc">Data de Criação:</label>
+        <input type="date" id="datanasc" required /><br><br>
+
+        <label style="padding-right: 80px;" for="Perfil">Perfil:</label>
+        <b><input type="radio" name="Perfil" id="Perfil">
+            <label for="Tipo">Perfil</label></b>
+
+        <b><input type="radio" name="Perfil" id="adm">
+            <label for="adm">Administrador</label></b><br>
+           
+            <div style="display: flex; align-items: center;">
+                <label  style="padding-right: 35px;" for="Obs">Observações:</label>
+                <textarea  name="Obs" id="Obs" style="width: 50%; height: 200px;"></textarea>
+                
+            </div>
+       <br>
+       
+         
+       
+        <label style="padding-right: 60px; for="mod">Modulos:</label>
+        
+        <b><input type="checkbox" name="com" id="com">
+        <label  for="com">Compras</label>
+        
+        <input  type="checkbox" name="bli" id="bli">
+        <label   for="bli">Blibioteca</label>
+        
+        <input type="checkbox" name="ac" id="ac">
+        <label   for="ac">Académico</label><br>
+        
+        <input  type="checkbox" name="doc" id="doc" style="margin-left: 130px;">
+        <label  for="doc">Documentação</label>
+        
+        <input type="checkbox" name="RH" id="RH">
+        <label for="RH">Recusos humanos</label><br><br></b>
+        
+        <input type="reset" value="Enviar" />
+        <input type="submit" value="Excluir" />
+
+
+    </form>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
