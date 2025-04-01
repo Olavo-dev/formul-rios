@@ -41,6 +41,7 @@
     <h1><b>Manutenção de usuarios do sistema interno</b></h1><br>
 
     <form action="">
+
         <label style="padding-right: 85px;" for="log">Login:</label>
         <input type="text" id="log" placeholder="Insira seu login" required><br><br>
 
@@ -54,7 +55,7 @@
         </select><br><br>
 
         <label style="padding-right: 80px;" for="Tipo">Tipo:</label>
-        <b><input type="radio" name="Tipo" id="Tipos">
+        <b><input type="radio" name="Tipo" id="Tipos" required>
             <label for="Tipo">Técnico</label></b>
 
         <b><input type="radio" name="Tipo" id="Tipos">
@@ -75,7 +76,7 @@
            
             <div style="display: flex; align-items: center;">
                 <label  style="padding-right: 35px;" for="Obs">Observações:</label>
-                <textarea  name="Obs" id="Obs" style="width: 50%; height: 200px;"></textarea>
+                <textarea  name="Obs" id="Obs" style="width: 50%; height: 200px;"></textarea required>
                 
             </div>
        <br>

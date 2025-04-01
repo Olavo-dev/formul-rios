@@ -28,16 +28,16 @@
         <fieldset>
             <legend><b>Dados pessoais</b></legend>
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome"><br><br>
+            <input type="text" id="nome" name="nome" required><br><br>
 
             <label for="endereco">Endereço:</label>
-            <input type="text" id="endereco" name="endereco"><br><br>
+            <input type="text" id="endereco" name="endereco" required><br><br>
 
             <label for="cidade">Cidade:</label>
-            <input type="text" id="cidade" name="cidade"><br><br>
+            <input type="text" id="cidade" name="cidade" required><br><br>
 
             <label for="estado">Estado:</label>
-            <select id="estado" name="estado">
+            <select id="estado" name="estado" required>
                 <option value="SP">São Paulo</option>
                 <option value="RJ">Rio de Janeiro</option>
                 <option value="MG">Minas Gerais</option>
@@ -48,8 +48,8 @@
         <fieldset>
             <legend><b>Dados profissionais</b></legend>
             <p>Natureza do Cargo</p>
-            <input type="radio" id="gerencia" name="cargo" value="gerencia" checked>
-            <label for="gerencia">Gerência</label>
+            <input type="radio" id="gerencia" name="cargo" value="gerencia" checked >
+            <label for="gerencia">Gerência</label >
 
             <input type="radio" id="financeiro" name="cargo" value="financeiro">
             <label for="financeiro">Financeiro</label>
@@ -82,7 +82,7 @@
             <br><br>
 
             <label for="mini-curriculo">Mini-currículo:</label><br>
-            <textarea id="mini-curriculo" name="mini-curriculo" rows="5" cols="40"></textarea>
+            <textarea id="mini-curriculo" name="mini-curriculo" rows="5" cols="40" required></textarea >
         </fieldset>
         <br>
         <button type="submit">Enviar</button>
